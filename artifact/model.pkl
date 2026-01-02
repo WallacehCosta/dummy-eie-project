@@ -1,0 +1,9 @@
+# build_dummy_model.py
+import pickle
+
+class DummyModel:
+    def predict(self, x):
+        return x
+
+with open("model.pkl", "wb") as f:
+    pickle.dump(DummyModel(), f)
