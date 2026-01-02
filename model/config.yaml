@@ -1,0 +1,10 @@
+name: test-model
+task: inference
+framework: custom
+inputs:
+  - name: input
+    type: float
+    shape: [3]
+outputs:
+  - name: output
+    type: float
